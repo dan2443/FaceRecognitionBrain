@@ -1,25 +1,25 @@
-export const particlesOptions ={
+export const particlesOptions = {
   particles: {
     number: {
       value: 80,
       density: {
         enable: true,
-        value_area: 800
-      }
-    }
+        value_area: 800,
+      },
+    },
   },
   interactivity: {
-    detect_on: 'window',
-    events:{
+    detect_on: "window",
+    events: {
       onhover: {
-      enable: true,
-      mode: 'repulse'
-      }
+        enable: true,
+        mode: "repulse",
+      },
     },
-    modes:{
-      "repulse": {
-        "distance": 80,
-      }
-    } 
-  }
-}
+    modes: {
+      repulse: {
+        distance: 80,
+      },
+    },
+  },
+};
