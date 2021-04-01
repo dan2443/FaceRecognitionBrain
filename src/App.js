@@ -27,22 +27,12 @@ const initialState = {
 };
 
 function App() {
-  //initial state - need to check
   const [input, setInput] = useState(initialState.input);
   const [imageUrl, setImageUrl] = useState(initialState.imageUrl);
   const [box, setBox] = useState(initialState.box);
   const [route, setRoute] = useState(initialState.route);
   const [isSignedIn, setIsSignedIn] = useState(initialState.isSignedIn);
   const [user, setUser] = useState(initialState.user);
-
-  function setInitialState() {
-    setInput(initialState.input);
-    setImageUrl(initialState.imageUrl);
-    setBox(initialState.box);
-    setRoute(initialState.route);
-    setIsSignedIn(initialState.isSignedIn);
-    setUser(initialState.user);
-  }
 
   return (
     <div className="App">
@@ -65,6 +55,15 @@ function App() {
       )}
     </div>
   );
+
+  function setInitialState() {
+    setInput(initialState.input);
+    setImageUrl(initialState.imageUrl);
+    setBox(initialState.box);
+    setRoute(initialState.route);
+    setIsSignedIn(initialState.isSignedIn);
+    setUser(initialState.user);
+  }
 
   function calculateFaceLocation(data) {
     const clarifaiFace =
