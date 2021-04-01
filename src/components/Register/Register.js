@@ -5,9 +5,11 @@ function Register({ onRouteChange, loadUser }) {
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   function onSubmitSignIn() {
-    fetch("http://localhost:3000/register", {
+    fetch("https://warm-thicket-38778.herokuapp.com/register", {
       method: "post",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify({
         email: email,
         password: password,

@@ -82,7 +82,7 @@ function App() {
 
   function onPictureSubmit() {
     setImageUrl(input);
-    fetch("http://localhost:3000/imageurl", {
+    fetch("https://warm-thicket-38778.herokuapp.com/imageurl", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -93,7 +93,7 @@ function App() {
       .then(
         (response) => {
           if (response) {
-            fetch("http://localhost:3000/image", {
+            fetch("https://warm-thicket-38778.herokuapp.com/image", {
               method: "put",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({
